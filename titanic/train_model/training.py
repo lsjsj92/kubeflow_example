@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
 
-def get_clean_data(ACCESSKEY, SECRETKEY, REGIONNAME, BUCKETNAME, DATAKEY):
+def get_preprocessing_data(ACCESSKEY, SECRETKEY, REGIONNAME, BUCKETNAME, DATAKEY):
     s3 = boto3.client('s3',
                         aws_access_key_id = ACCESSKEY,
                         aws_secret_access_key=SECRETKEY,
@@ -96,7 +96,7 @@ if __name__ == "__main__":
     args = argument_parser.parse_args()
 
     print("get clean data")
-    clean_data = clean_data(args.ACCESSKEY, args.SECRETKEY, args.region_name, args.bucket_name, args.data)
+    clean_data = get_preprocessing_data(args.ACCESSKEY, args.SECRETKEY, args.region_name, args.bucket_name, args.data)
 
     print("training model")
     model, X_test, y_test = training(clean_data)
