@@ -23,3 +23,10 @@ This repo is made for kubeflow example
     4. Get preprocessing data from s3
     5. Training model
     6. Upload model to s3
+
+
+# How to use it?
+- I wrote an explain on my blog
+  - iris : https://lsjsj92.tistory.com/581
+  - titanic : https://lsjsj92.tistory.com/586
+  
