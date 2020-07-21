@@ -9,16 +9,16 @@ from kfp import dsl
 def soojin_pipeline():
     add_p = dsl.ContainerOp(
         name="load iris data pipeline",
-        image="lsjsj92/soojin-iris-preprocessing:0.5",
+        image="lsjsj92/soojin-iris-preprocessing:0.6",
         arguments=[
-            '--data_path', './iris.csv'
+            '--data_path', './Iris.csv'
         ],
         file_outputs={'iris' : '/iris.csv'}
     )
 
     ml = dsl.ContainerOp(
         name="training pipeline",
-        image="lsjsj92/soojin-iris-train:0.5",
+        image="lsjsj92/soojin-iris-train:0.6",
         arguments=[
             '--data', add_p.outputs['iris']
         ]
