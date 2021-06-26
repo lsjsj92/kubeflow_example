@@ -1,6 +1,13 @@
 # kubeflow_example
 This repo is made for kubeflow example
 
+
+# How to use it?
+- I wrote an explain on my blog
+  - iris : https://lsjsj92.tistory.com/581
+  - titanic : https://lsjsj92.tistory.com/586
+  - metrics_evaluation_and_check_condtion : https://lsjsj92.tistory.com/589
+
 1. iris
   - Make kubeflow pipeline for simple example : iris data
   - Doing load data -> training data
@@ -38,8 +45,3 @@ This repo is made for kubeflow example
     - ![스크린샷 2020-07-23 오전 6 11 44](https://user-images.githubusercontent.com/24634054/88229282-72758600-ccab-11ea-8a4e-24bdb2a3ab27.png)
 
 
-# How to use it?
-- I wrote an explain on my blog
-  - iris : https://lsjsj92.tistory.com/581
-  - titanic : https://lsjsj92.tistory.com/586
-  - metrics_evaluation_and_check_condtion : https://lsjsj92.tistory.com/589
